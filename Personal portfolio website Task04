@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .main {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill, .project {
+            flex: 1 1 200px;
+            padding: 10px;
+            background: #e7e7e7;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4a90e2;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            .skills, .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <img src="your-photo.jpg" alt="Your Name" class="photo">
+        <p>Web Developer | Designer | Creator</p>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate web developer with a background in creating dynamic and responsive web applications. I enjoy learning new technologies and improving my skills. Here’s a bit about my background and experience.</p>
+                <h3>Education</h3>
+                <p>Bachelor of Science in Computer Science from XYZ University.</p>
+                <h3>Professional Experience</h3>
+                <p>Worked as a front-end developer at ABC Company, focusing on building user-friendly web interfaces.</p>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">Git</div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <h3>Project 1</h3>
+                        <p>A brief description of the project.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Project 2</h3>
+                        <p>A brief description of the project.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Project 3</h3>
+                        <p>A brief description of the project.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="color: white;">LinkedIn</a> | Email: your-email@example.com</p>
+    </footer>
+</body>
+</html>
